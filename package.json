@@ -1,0 +1,11 @@
+{
+  "name": "ali-fekry-soc-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Junior SOC Analyst & Cybersecurity Portfolio for Ali Fekry Mohamed",
+  "author": "Ali Fekry Mohamed",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 3000",
+    "serve": "python -m http.server 3000"
+  }
+}

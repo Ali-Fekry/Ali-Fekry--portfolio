@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Fekry Mohamed | Junior SOC Analyst & Cybersecurity Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Ali Fekry Mohamed, Junior SOC Analyst and Cybersecurity Analyst based in Egypt. Specializing in Security Operations, threat detection, incident triage, and blue-team defense.">
+  <meta name="keywords" content="Junior SOC Analyst, SOC Analyst Tier 1, Cybersecurity Analyst, Blue Team, Security Operations, SIEM, Splunk, Wireshark, Incident Response, Egypt">
+  <meta name="author" content="Ali Fekry Mohamed">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ali Fekry Mohamed | Junior SOC Analyst & Cybersecurity Analyst">
+  <meta property="og:description" content="Defending systems through security monitoring, threat detection, incident investigation, and blue-team operations.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Ambient Grid Overlay -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- STICKY SITE NAVIGATION -->
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Ali Fekry Mohamed Homepage">
+        <div class="brand-shield">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Ali Fekry</span>
+          <span class="brand-role">SOC ANALYST // BLUE TEAM</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#soc-dashboard" class="nav-link">SOC Dashboard</a></li>
+          <li><a href="#investigations" class="nav-link">Investigation Labs</a></li>
+          <li><a href="#triage-workflow" class="nav-link">Triage Workflow</a></li>
+          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="#networking" class="nav-link">Networking</a></li>
+          <li><a href="#mitre" class="nav-link">MITRE ATT&CK</a></li>
+          <li><a href="#courses" class="nav-link">Training</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span>AVAILABLE FOR ROLES</span>
+        </div>
+        <button class="btn btn-outline btn-sm btn-open-recruiter" title="View 30-Second Recruiter Summary">
+          30s View
+        </button>
+        <a href="./assets/Ali_Fekry_SOC_Analyst_CV.pdf" download="Ali_Fekry_SOC_Analyst_CV.pdf" class="btn btn-primary btn-sm btn-download">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          CV
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-drawer" id="mobileMenu">
+    <a href="#about" class="mobile-nav-link">About Me</a>
+    <a href="#skills" class="mobile-nav-link">Cybersecurity Skills</a>
+    <a href="#soc-dashboard" class="mobile-nav-link">Interactive SOC Dashboard</a>
+    <a href="#investigations" class="mobile-nav-link">Investigation Labs</a>
+    <a href="#triage-workflow" class="mobile-nav-link">SOC Triage Workflow</a>
+    <a href="#case-studies" class="mobile-nav-link">Case Studies</a>
+    <a href="#networking" class="mobile-nav-link">Networking Architecture</a>
+    <a href="#mitre" class="mobile-nav-link">MITRE ATT&CK Matrix</a>
+    <a href="#courses" class="mobile-nav-link">Training & Certifications</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem;">
+      <a href="./assets/Ali_Fekry_SOC_Analyst_CV.pdf" download="Ali_Fekry_SOC_Analyst_CV.pdf" class="btn btn-primary" style="flex: 1;">Download CV</a>
+      <button class="btn btn-secondary btn-open-recruiter" style="flex: 1;">30s View</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-bar">
+            <span class="hero-badge">
+              <span class="pulse-dot"></span>
+              BLUE TEAM DEFENSE
+            </span>
+            <span class="hero-badge" style="color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.3);">
+              ENGINEERING GRADUATE • GRADE A
+            </span>
+          </div>
+
+          <div class="hero-title-group">
+            <div class="hero-intro">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              <span>root@blue-team-defense:~$ whoami</span>
+            </div>
+            <h1 class="hero-name">Ali Fekry Mohamed</h1>
+            <h2 class="hero-headline">Junior SOC Analyst | Cybersecurity Analyst</h2>
+          </div>
+
+          <p class="hero-description">
+            Defending systems through security monitoring, threat detection, incident investigation, and blue-team operations.
+          </p>
+
+          <div class="hero-meta-list">
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Heliopolis, Cairo, Egypt</span>
+            </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:aly.fekry10@gmail.com" style="color: var(--text-cyan);">aly.fekry10@gmail.com</a>
+            </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>01274872104</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#investigations" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              View My Investigations
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact Me
+            </a>
+            <div class="hero-socials">
+              <a href="https://github.com/Ali-Fekry" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ali Fekry GitHub Profile" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/ali-fekry" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ali Fekry LinkedIn Profile" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Recruiter Fast-Track Card -->
+        <div class="hero-recruiter-card">
+          <div class="recruiter-badge">
+            <span class="recruiter-pill">30-Second Recruiter Summary</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald);">Verified Profile</span>
+          </div>
+
+          <div class="quick-fact-list">
+            <div class="quick-fact">
+              <div class="quick-fact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <div class="quick-fact-title">Electronics & Communication Engineering (MIU)</div>
+                <div class="quick-fact-desc">Graduation Project: Grade A • GPA: 3.18 • Rigorous analytical foundation</div>
+              </div>
+            </div>
+
+            <div class="quick-fact">
+              <div class="quick-fact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div>
+                <div class="quick-fact-title">Linux Administration Certification (Edges Academy)</div>
+                <div class="quick-fact-desc">Verified certification • Shell navigation, log inspection, process controls</div>
+              </div>
+            </div>
+
+            <div class="quick-fact">
+              <div class="quick-fact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <div class="quick-fact-title">Applied Blue Team & SOC Level 1 Training</div>
+                <div class="quick-fact-desc">TryHackMe SOC Level 1 Labs • Cisco Networking Academy CyberOps Associate</div>
+              </div>
+            </div>
+
+            <div class="quick-fact">
+              <div class="quick-fact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <div>
+                <div class="quick-fact-title">Core SOC Tooling & Frameworks</div>
+                <div class="quick-fact-desc">Splunk • Wireshark • Linux • Windows / AD Logs • MITRE ATT&CK • Cyber Kill Chain</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+            <a href="./assets/Ali_Fekry_SOC_Analyst_CV.pdf" download="Ali_Fekry_SOC_Analyst_CV.pdf" class="btn btn-primary btn-sm" style="flex: 1;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+            <button class="btn btn-secondary btn-sm" data-copy="aly.fekry10@gmail.com" data-copy-label="Email" style="flex: 1;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Email
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Professional Profile</span>
+          <h2 class="section-title">Engineering Mindset Applied to Blue Team Defense</h2>
+          <p class="section-desc">
+            Bridging an analytical Electronics & Communication Engineering education with dedicated security operations, networking mastery, and blue-team incident investigations.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-left">
+            <div class="card">
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Professional Summary
+              </h3>
+              <p style="margin-bottom: 1rem; line-height: 1.7;">
+                Junior SOC Analyst with a strong foundation in Security Operations, networking, Windows/Active Directory, threat detection, and incident investigation.
+              </p>
+              <p style="margin-bottom: 1.25rem; line-height: 1.7;">
+                Knowledgeable in SIEM, EDR/NDR/XDR, IDS/IPS, DNS security, phishing analysis, authentication attacks, and incident response. Familiar with MITRE ATT&CK and Cyber Kill Chain frameworks, with hands-on experience through SOC labs and security simulations. Seeking an entry-level SOC/Cybersecurity role in a blue-team environment.
+              </p>
+              <div style="border-top: 1px dashed var(--border-subtle); padding-top: 1rem;">
+                <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Target Positions</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                  <span class="hero-badge" style="font-size: 0.75rem;">Junior SOC Analyst</span>
+                  <span class="hero-badge" style="font-size: 0.75rem;">SOC Analyst Tier 1</span>
+                  <span class="hero-badge" style="font-size: 0.75rem;">Cybersecurity Analyst</span>
+                  <span class="hero-badge" style="font-size: 0.75rem;">Security Operations</span>
+                  <span class="hero-badge" style="font-size: 0.75rem;">Blue Team</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="card" style="padding: 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Languages
+              </h4>
+              <div class="language-list">
+                <div class="language-card">
+                  <div class="language-name">Arabic</div>
+                  <div class="language-level">Native</div>
+                </div>
+                <div class="language-card">
+                  <div class="language-name">English</div>
+                  <div class="language-level">Excellent</div>
+                </div>
+                <div class="language-card">
+                  <div class="language-name">French</div>
+                  <div class="language-level">Basics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Engineering Bridge -->
+          <div class="engineering-highlight-card">
+            <span class="engineering-badge">The Engineering Advantage</span>
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">
+              Why Electronics & Communication Engineering Matters in Cybersecurity
+            </h3>
+            <p style="margin-bottom: 1.25rem; line-height: 1.7; color: #cbd5e1;">
+              Graduating with a <strong>Bachelor's Degree in Electronics & Communication Engineering</strong> from <strong>MIU (Misr International University)</strong> with a <strong>Graduation Project Grade of A</strong> and a <strong>GPA of 3.18</strong> provides a technical foundation that directly reinforces defensive security:
+            </p>
+
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
+              <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <div style="color: var(--accent-cyan); margin-top: 2px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <strong style="color: #ffffff;">Deep Protocol & Packet Understanding:</strong>
+                  <p style="font-size: 0.875rem; color: #94a3b8;">Physical signaling, digital transmission, and lower-level OSI encapsulation principles make network packet analysis in Wireshark second nature.</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <div style="color: var(--accent-cyan); margin-top: 2px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <strong style="color: #ffffff;">Hardware, Embedded & Operating System Logic:</strong>
+                  <p style="font-size: 0.875rem; color: #94a3b8;">Understanding microprocessor architectures, registers, memory layouts, and data buses clarifies how buffer overflows, process injections, and host-level telemetry operate.</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                <div style="color: var(--accent-cyan); margin-top: 2px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <strong style="color: #ffffff;">Methodical Root-Cause Analysis:</strong>
+                  <p style="font-size: 0.875rem; color: #94a3b8;">Engineering problem-solving trains disciplined hypothesis testing—essential for validating alerts, eliminating false positives, and systematically isolating security incidents.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: var(--radius-md); padding: 1rem; font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-cyan);">
+              <em>"Central Focus: Engineer with a strong networking foundation who is building a career in Security Operations, threat detection, incident investigation, and blue-team cybersecurity."</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MINIATURE SOC DASHBOARD SIMULATOR -->
+    <section class="section" id="soc-dashboard">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Simulation</span>
+          <h2 class="section-title">SOC Security Operations Dashboard</h2>
+          <p class="section-desc">
+            A miniature SOC console demonstrating triage logic, alert categorization, telemetry correlation, and incident resolution.
+          </p>
+        </div>
+
+        <div class="soc-dashboard-wrapper">
+          <!-- Top Status Bar -->
+          <div class="soc-dashboard-topbar">
+            <div class="dashboard-title-group">
+              <div class="soc-live-status">
+                <span class="pulse-dot"></span>
+                <span>SOC STATUS: SYSTEM OPERATIONAL</span>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">| Uptime: 99.98% | Active Telemetry: EDR, NDR, IDS/IPS, SIEM</span>
+            </div>
+            <div class="dashboard-disclaimer">
+              PORTFOLIO VISUALIZATION / SIMULATED SOC ENVIRONMENT
+            </div>
+          </div>
+
+          <!-- Counter Grid -->
+          <div class="soc-metrics-grid">
+            <div class="metric-box">
+              <span class="metric-label">Active Alerts</span>
+              <span class="metric-value">12</span>
+            </div>
+            <div class="metric-box critical">
+              <span class="metric-label">Critical</span>
+              <span class="metric-value">1</span>
+            </div>
+            <div class="metric-box high">
+              <span class="metric-label">High Severity</span>
+              <span class="metric-value">3</span>
+            </div>
+            <div class="metric-box investigating">
+              <span class="metric-label">Under Investigation</span>
+              <span class="metric-value">4</span>
+            </div>
+            <div class="metric-box resolved">
+              <span class="metric-label">Resolved</span>
+              <span class="metric-value">4</span>
+            </div>
+          </div>
+
+          <!-- Alert Feed Container -->
+          <div class="soc-feed-container">
+            <div class="feed-header-controls">
+              <div class="feed-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <span>Live Alert Queue (Click Any Alert to Inspect Triage)</span>
+              </div>
+
+              <!-- Filter Tabs -->
+              <div class="filter-tab-group">
+                <button class="filter-btn soc-filter-btn active" data-filter="all">All Alerts</button>
+                <button class="filter-btn soc-filter-btn" data-filter="critical">Critical</button>
+                <button class="filter-btn soc-filter-btn" data-filter="high">High</button>
+                <button class="filter-btn soc-filter-btn" data-filter="medium">Medium</button>
+                <button class="filter-btn soc-filter-btn" data-filter="investigating">Investigating</button>
+                <button class="filter-btn soc-filter-btn" data-filter="resolved">Resolved</button>
+              </div>
+            </div>
+
+            <!-- Dynamic Alert Cards Feed -->
+            <div class="alert-feed-list" id="socAlertList">
+              <!-- Rendered via js/app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS & TOOLKIT -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Cybersecurity Skills & Security Toolkit</h2>
+          <p class="section-desc">
+            Technical competencies structured across Security Operations, Networking, Threat Models, and Blue Team Tools.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-tab-nav">
+          <button class="skills-tab-btn active" data-category="all">All Skills</button>
+          <button class="skills-tab-btn" data-category="secOps">Security Operations</button>
+          <button class="skills-tab-btn" data-category="networking">Networking & Protocols</button>
+          <button class="skills-tab-btn" data-category="threats">Threats & Attacks</button>
+          <button class="skills-tab-btn" data-category="tools">Tools & Frameworks</button>
+        </div>
+
+        <!-- Search Input -->
+        <div style="max-width: 480px; margin: 0 auto 2.5rem auto; position: relative;">
+          <input type="text" id="skillSearchInput" class="form-input" placeholder="Search skills (e.g., Splunk, Wireshark, DNS, VLAN, EDR)..." style="padding-left: 2.75rem;">
+          <div style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid -->
+        <div class="skills-display-grid" id="skillsDisplayGrid">
+          <!-- Rendered via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- HANDS-ON SOC INVESTIGATION LAB -->
+    <section class="section" id="investigations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Applied Experience</span>
+          <h2 class="section-title">Security Operations & Hands-On Labs</h2>
+          <p class="section-desc">
+            Practical SOC investigation experiences simulating real-world security operations, header analysis, log correlation, and threat containment.
+          </p>
+        </div>
+
+        <div class="lab-layout">
+          <!-- Left Selector -->
+          <div class="lab-selector-list" id="labNavList">
+            <!-- Rendered via js/app.js -->
+          </div>
+
+          <!-- Right Detail View -->
+          <div class="lab-detail-view">
+            <div class="lab-detail-header">
+              <span class="hero-badge" id="labDetailBadge" style="margin-bottom: 0.75rem;">Workflow</span>
+              <h3 id="labDetailTitle" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #ffffff;">Investigation Title</h3>
+              <p id="labDetailDesc" style="color: var(--text-secondary); line-height: 1.6;">Investigation description...</p>
+            </div>
+
+            <!-- Workflow Steps -->
+            <div class="workflow-steps-list" id="labWorkflowSteps">
+              <!-- Rendered via js/app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7-STAGE SOC ALERT TRIAGE WORKFLOW -->
+    <section class="section" id="triage-workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Standard Operating Procedure</span>
+          <h2 class="section-title">SOC Alert Triage & Incident Workflow</h2>
+          <p class="section-desc">
+            The methodical 7-stage blue team lifecycle executed from initial alert ingestion to post-incident recovery.
+          </p>
+        </div>
+
+        <div class="triage-stepper-container">
+          <!-- Stepper Circle Bar -->
+          <div class="stepper-nav" id="triageStepperNav">
+            <!-- Rendered via js/app.js -->
+          </div>
+
+          <!-- Active Step Display -->
+          <div class="triage-active-display">
+            <div>
+              <div id="triageStepNumber" style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.5rem;">STAGE 01 / 07</div>
+              <h3 id="triageStepName" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-primary);">Stage Name</h3>
+              <p id="triageStepDesc" style="color: var(--text-secondary); line-height: 1.6; font-size: 0.9375rem;">Stage description...</p>
+            </div>
+
+            <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Analyst Action & Key Checklist
+              </div>
+              <p id="triageStepAction" style="font-size: 0.875rem; color: #cbd5e1; line-height: 1.6;">Analyst actions...</p>
+            </div>
+          </div>
+
+          <!-- Stepper Controls -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem;">
+            <button class="btn btn-secondary btn-sm" id="triagePrevBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+              Previous Stage
+            </button>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Blue Team SOP Execution</span>
+            <button class="btn btn-primary btn-sm" id="triageNextBtn">
+              Next Stage
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVESTIGATION CASE STUDIES -->
+    <section class="section" id="case-studies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Scenario Analysis</span>
+          <h2 class="section-title">Investigation Case Studies</h2>
+          <p class="section-desc">
+            Structured SOC case studies detailing Threat → Indicators → Investigation → MITRE ATT&CK Mapping → Severity → Response → Outcome.
+          </p>
+        </div>
+
+        <div class="case-studies-grid" id="caseStudiesGrid">
+          <!-- Rendered via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VISUAL NETWORKING SECTION -->
+    <section class="section" id="networking">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Infrastructure Foundations</span>
+          <h2 class="section-title">Network Architecture & Security Monitoring</h2>
+          <p class="section-desc">
+            Connecting networking fundamentals (routing, switching, VLANs, firewalls, and DNS) directly to threat detection and SOC packet inspection.
+          </p>
+        </div>
+
+        <div class="networking-layout">
+          <!-- Interactive Topology Selector -->
+          <div class="network-topology-canvas">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem;">
+              <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-cyan); font-weight: 700;">ENTERPRISE TOPOLOGY MATRIX</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">Click node to inspect SOC perspective</span>
+            </div>
+            
+            <div class="network-grid-diagram" id="networkGridDiagram">
+              <!-- Rendered via js/app.js -->
+            </div>
+          </div>
+
+          <!-- Node Detail Panel -->
+          <div class="node-detail-panel">
+            <span class="hero-badge" id="netNodeLayer" style="margin-bottom: 0.75rem;">Edge Defense</span>
+            <h3 id="netNodeName" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #ffffff;">Node Name</h3>
+            <p id="netNodeRole" style="color: var(--text-secondary); line-height: 1.6; font-size: 0.9375rem;">Network role...</p>
+
+            <div class="soc-perspective-box">
+              <div class="soc-perspective-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                SOC Analyst Security Monitoring Perspective
+              </div>
+              <p id="netNodeSocPerspective" style="font-size: 0.875rem; color: #cbd5e1; line-height: 1.6;">Why SOC monitors this node...</p>
+            </div>
+
+            <div style="margin-top: 1.25rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem;">Associated Protocols & Standards</div>
+              <div id="netNodeProtocols" style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OSI vs TCP/IP Comparison -->
+        <div class="osi-tcp-wrapper">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              OSI Model vs. TCP/IP Protocol Stack (SOC Defense View)
+            </h3>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">CCNA & Network+ Conceptual Mapping</span>
+          </div>
+
+          <table class="osi-table">
+            <thead>
+              <tr>
+                <th>OSI Layer</th>
+                <th>TCP/IP Layer</th>
+                <th>Key Protocols</th>
+                <th>SOC Monitoring & Threats</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>L7 - Application</strong></td>
+                <td>Application</td>
+                <td>HTTP, HTTPS, DNS, DHCP, SMTP</td>
+                <td>Phishing emails, web exploits (SQLi, XSS), DNS tunneling, C2 beacons</td>
+              </tr>
+              <tr>
+                <td><strong>L6 - Presentation</strong></td>
+                <td>Application</td>
+                <td>SSL/TLS, ASCII, JPEG</td>
+                <td>TLS certificate anomalies, encrypted payload inspection, MIME types</td>
+              </tr>
+              <tr>
+                <td><strong>L5 - Session</strong></td>
+                <td>Application</td>
+                <td>RPC, NetBIOS, PPTP</td>
+                <td>Remote access sessions, RPC endpoint enumeration, session hijacking</td>
+              </tr>
+              <tr>
+                <td><strong>L4 - Transport</strong></td>
+                <td>Transport</td>
+                <td>TCP, UDP</td>
+                <td>SYN flood anomalies, port scans (T1046), half-open connections, non-standard ports</td>
+              </tr>
+              <tr>
+                <td><strong>L3 - Network</strong></td>
+                <td>Internet</td>
+                <td>IPv4, IPv6, ICMP, IPsec, NAT</td>
+                <td>IP spoofing, ICMP exfiltration, routing table tampering, subnet hopping</td>
+              </tr>
+              <tr>
+                <td><strong>L2 - Data Link</strong></td>
+                <td>Network Access</td>
+                <td>Ethernet, 802.1Q (VLANs), ARP, MAC</td>
+                <td>ARP poisoning / spoofing, VLAN hopping, rogue MAC address detection</td>
+              </tr>
+              <tr>
+                <td><strong>L1 - Physical</strong></td>
+                <td>Network Access</td>
+                <td>Cables, Fiber, Hubs, Signal Levels</td>
+                <td>Physical tap connections, link disconnection alerts, hardware failures</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- MITRE ATT&CK SECTION -->
+    <section class="section" id="mitre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Adversary Tactics</span>
+          <h2 class="section-title">MITRE ATT&CK Matrix Alignment</h2>
+          <p class="section-desc">
+            Adversary behaviors and techniques investigated during hands-on SOC labs, mapped to standardized blue-team detection telemetry.
+          </p>
+        </div>
+
+        <div class="mitre-grid" id="mitreGrid">
+          <!-- Rendered via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING & COURSES -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Continuous Education</span>
+          <h2 class="section-title">Training, Certifications & Courses</h2>
+          <p class="section-desc">
+            Strictly honest representation of earned certifications, specialized hands-on coursework, and foundational curricula.
+          </p>
+        </div>
+
+        <!-- 1. Verified Certifications -->
+        <div class="courses-category-block">
+          <h3 class="courses-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            Verified Professional Certification
+          </h3>
+          <div class="courses-grid" id="coursesCertsGrid">
+            <!-- Rendered via js/app.js -->
+          </div>
+        </div>
+
+        <!-- 2. Hands-On Programs & Labs -->
+        <div class="courses-category-block">
+          <h3 class="courses-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            Applied Security Coursework & Hands-On Labs
+          </h3>
+          <div class="courses-grid" id="coursesLabsGrid">
+            <!-- Rendered via js/app.js -->
+          </div>
+        </div>
+
+        <!-- 3. Foundational Networking Knowledge -->
+        <div class="courses-category-block">
+          <h3 class="courses-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Foundational Networking Knowledge & Concepts
+          </h3>
+          <div class="courses-grid" id="coursesFoundationsGrid">
+            <!-- Rendered via js/app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER & LEARNING TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Progression</span>
+          <h2 class="section-title">Career & Technical Growth Timeline</h2>
+          <p class="section-desc">
+            A chronological view of my journey from an engineering degree to specialized security operations and blue team investigations.
+          </p>
+        </div>
+
+        <div class="timeline-flow" id="careerTimelineFlow">
+          <!-- Rendered via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-desc">
+            Interested in cybersecurity, SOC operations, threat detection, or blue-team opportunities? Feel free to connect with me.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-panel">
+            <div class="card" style="padding: 2rem;">
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;">Contact Information</h3>
+              <p style="margin-bottom: 1.5rem; font-size: 0.875rem;">
+                Actively seeking entry-level Junior SOC Analyst, SOC Analyst Tier 1, and Cybersecurity Analyst opportunities in Egypt or remote blue teams.
+              </p>
+
+              <div class="contact-channel-list">
+                <!-- Email -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-label">Email Address</div>
+                      <a href="mailto:aly.fekry10@gmail.com" class="channel-val">aly.fekry10@gmail.com</a>
+                    </div>
+                  </div>
+                  <button class="btn-icon" data-copy="aly.fekry10@gmail.com" data-copy-label="Email" title="Copy Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-label">Phone Number</div>
+                      <a href="tel:01274872104" class="channel-val">01274872104</a>
+                    </div>
+                  </div>
+                  <button class="btn-icon" data-copy="01274872104" data-copy-label="Phone Number" title="Copy Phone Number">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  </button>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-label">Location</div>
+                      <span class="channel-val">Heliopolis, Cairo, Egypt</span>
+                    </div>
+                  </div>
+                  <span class="hero-badge" style="font-size: 0.6875rem;">GMT+2 / Cairo</span>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-label">Professional Network</div>
+                      <a href="https://www.linkedin.com/in/ali-fekry" target="_blank" rel="noopener noreferrer" class="channel-val">linkedin.com/in/ali-fekry</a>
+                    </div>
+                  </div>
+                  <a href="https://www.linkedin.com/in/ali-fekry" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Open LinkedIn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+
+                <!-- GitHub -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-label">Source Code Repositories</div>
+                      <a href="https://github.com/Ali-Fekry" target="_blank" rel="noopener noreferrer" class="channel-val">github.com/Ali-Fekry</a>
+                    </div>
+                  </div>
+                  <a href="https://github.com/Ali-Fekry" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Open GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.5rem;">
+                <a href="./assets/Ali_Fekry_SOC_Analyst_CV.pdf" download="Ali_Fekry_SOC_Analyst_CV.pdf" class="btn btn-primary" style="width: 100%;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download Full CV (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #ffffff;">Send a Message</h3>
+            <p style="margin-bottom: 1.5rem; font-size: 0.875rem; color: var(--text-secondary);">
+              Send a note regarding job opportunities, interview requests, or security discussions.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name / Organization *</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Hiring Manager / Security Lead" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email Address *</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="e.g. recruiter@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subject</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="e.g. Junior SOC Analyst Position Inquiry" value="Junior SOC Analyst Opportunity - Ali Fekry">
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message *</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Hello Ali, we reviewed your SOC portfolio and would love to discuss a blue-team role..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message / Launch Email
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-copy-text">
+        <span style="font-weight: 700; color: var(--text-primary); font-size: 1rem;">Ali Fekry Mohamed</span>
+        <span>Junior SOC Analyst | Cybersecurity Analyst • Blue Team Operations</span>
+        <span style="font-size: 0.75rem; color: var(--text-muted);">Strictly verified portfolio based on verified professional credentials.</span>
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <a href="#hero" class="btn btn-secondary btn-sm">Back to Top ↑</a>
+        <a href="https://github.com/Ali-Fekry" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ali-fekry" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: ALERT DETAIL INVESTIGATION DRAWER -->
+  <div class="modal-backdrop" id="alertModal" role="dialog" aria-modal="true" aria-labelledby="modalThreatTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span class="badge-severity high" id="modalSeverityBadge">HIGH</span>
+            <span class="badge-status investigating" id="modalStatusBadge">Investigating</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);" id="modalAlertId">ALT-2026-104</span>
+          </div>
+          <h3 id="modalThreatTitle" style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-top: 0.25rem;">Threat Name</h3>
+        </div>
+        <button class="modal-close-btn" data-close-modal aria-label="Close Modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">SOURCE SENSOR</div>
+            <div id="modalSensor" style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">Sensor</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">MITRE ATT&CK MAPPING</div>
+            <div id="modalMitre" style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-cyan);">T1566</div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase;">
+              Raw Telemetry & Log Snippet
+            </span>
+            <button class="btn btn-secondary btn-sm" id="copyLogBtn" style="padding: 0.2rem 0.5rem; font-size: 0.6875rem;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Log
+            </button>
+          </div>
+          <pre class="raw-log-block" id="modalLogSnippet">Loading log snippet...</pre>
+        </div>
+
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.5rem;">
+            Analyst Investigation Procedures Followed
+          </div>
+          <ul id="modalInvestigationSteps" style="list-style: none; padding-left: 0; font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5;">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+        <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: var(--radius-md); padding: 1rem;">
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--accent-emerald); text-transform: uppercase; margin-bottom: 0.35rem;">
+            Recommended Containment & Mitigation Action
+          </div>
+          <p id="modalContainment" style="font-size: 0.875rem; color: #cbd5e1; line-height: 1.5;">Containment procedures...</p>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+          <button class="btn btn-secondary btn-sm" data-close-modal>Close Inspector</button>
+          <button class="btn btn-emerald btn-sm" id="toggleAlertStatusBtn">Mark as Resolved</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: RECRUITER 30-SECOND FAST TRACK MODAL -->
+  <div class="modal-backdrop" id="recruiterModal" role="dialog" aria-modal="true" aria-labelledby="recruiterModalTitle">
+    <div class="modal-dialog" style="max-width: 680px;">
+      <div class="modal-header">
+        <div>
+          <span class="hero-badge" style="font-size: 0.6875rem;">Recruiter Fast-Track</span>
+          <h3 id="recruiterModalTitle" style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-top: 0.25rem;">Candidate Snapshot: Ali Fekry Mohamed</h3>
+        </div>
+        <button class="modal-close-btn" data-close-modal aria-label="Close Modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div style="background: rgba(0, 240, 255, 0.05); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: var(--radius-md); padding: 1rem;">
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); font-weight: 700;">THE 30-SECOND TAKEAWAY</div>
+          <p style="font-size: 0.875rem; color: var(--text-primary); margin-top: 0.35rem; line-height: 1.5;">
+            An electronics & communications engineering graduate who has pivoted directly into Security Operations. Rather than just taking passive online courses, Ali has practiced real SOC workflows: phishing header teardowns, Windows Event 4625 brute-force parsing, IDS/NDR packet analysis in Wireshark, ransomware containment, and MITRE ATT&CK mapping.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.875rem;">
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">EDUCATION</div>
+            <div style="font-weight: 700; color: #ffffff;">B.Sc. Electronics & Communication Engineering</div>
+            <div style="color: var(--text-secondary); font-size: 0.8125rem;">MIU • Grad Project Grade: A • GPA: 3.18</div>
+          </div>
+
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">VERIFIED CERTIFICATION</div>
+            <div style="font-weight: 700; color: #ffffff;">Linux Administration Certification</div>
+            <div style="color: var(--text-secondary); font-size: 0.8125rem;">Edges Academy • Certified Systems Admin</div>
+          </div>
+
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">BLUE TEAM TRAINING</div>
+            <div style="font-weight: 700; color: #ffffff;">TryHackMe SOC L1 & Cisco CyberOps</div>
+            <div style="color: var(--text-secondary); font-size: 0.8125rem;">SIEM, EDR, Wireshark, Alert Triage</div>
+          </div>
+
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted);">AVAILABILITY & LOCATION</div>
+            <div style="font-weight: 700; color: #ffffff;">Available Immediately</div>
+            <div style="color: var(--text-secondary); font-size: 0.8125rem;">Cairo, Egypt • Remote / On-site / Hybrid</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+          <a href="./assets/Ali_Fekry_SOC_Analyst_CV.pdf" download="Ali_Fekry_SOC_Analyst_CV.pdf" class="btn btn-primary" style="flex: 1;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Full Resume (PDF)
+          </a>
+          <button class="btn btn-secondary" data-copy="aly.fekry10@gmail.com" data-copy-label="Email" style="flex: 1;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy aly.fekry10@gmail.com
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOBAL TOAST NOTIFICATION -->
+  <div class="toast-notice" id="toastNotice" role="alert" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-cyan);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toastText">Notification message</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
